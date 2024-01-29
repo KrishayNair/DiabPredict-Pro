@@ -1,2 +1,7 @@
-# Sem-6-Mini-Project
-ML project done in sem 6
+# diabetes_prediction
+Preview of the Project
+
+![](images/1.PNG)
+![](images/2.PNG)
+![](images/3.PNG)
+![](images/4.PNG)

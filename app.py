@@ -20,8 +20,8 @@ df = pd.read_csv("diabetesnew.csv")
 
 selected = option_menu(
     menu_title=None,
-    options=["Diabetes Prediction","Diabetes Retinopathy"],
-    icons=["search","search"],
+    options=["Diabetes Prediction","Diabetes Retinopathy", "About"],
+    icons=["search","search","book"],
     menu_icon="cast",
     default_index=0,
     orientation="horizontal",
@@ -204,6 +204,7 @@ if selected == "Diabetes Retinopathy":
       preprocessed_image = preprocess_image(image)
       prediction = model.predict(preprocessed_image)
       return prediction
+  
 
   # Streamlit App
   def main():
@@ -224,5 +225,18 @@ if selected == "Diabetes Retinopathy":
       main()
 
 
+if selected == "About":
+  st.header("What is Diabetes?")
+  st.write("Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.")
+  st.write("Your body breaks down most of the food you eat into sugar (glucose) and releases it into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.")
+
+  st.write("With diabetes, your body doesn't make enough insulin or can’t use it as well as it should. When there isn’t enough insulin or cells stop responding to insulin, too much blood sugar stays in your bloodstream. Over time, that can cause serious health problems, such as heart disease, vision loss, and kidney disease.")
+
+  st.write("There isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Other things you can do to help:")
+
+  st.write("1. Take medicine as prescribed.")
+  st.write("2. Get diabetes self-management education and support.")
+  st.write("3. Make and keep health care appointments.")
+  st.image("D1.jpg")
 
 

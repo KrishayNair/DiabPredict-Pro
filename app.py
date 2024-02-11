@@ -226,7 +226,7 @@ if selected == "Diabetes Retinopathy":
 
 
 if selected == "About":
-  st.header("What is Diabetes?")
+  st.title("What is Diabetes?")
   st.write("Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.")
   st.write("Your body breaks down most of the food you eat into sugar (glucose) and releases it into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.")
 
@@ -239,4 +239,27 @@ if selected == "About":
   st.write("3. Make and keep health care appointments.")
   st.image("D1.jpg")
 
+  st.title("What is Diabetic retinopathy?")
+  st.write("Diabetic retinopathy is an eye condition that can cause vision loss and blindness in people who have diabetes. It affects blood vessels in the retina (the light-sensitive layer of tissue in the back of your eye")
 
+  st.write("If you have diabetes, it’s important to get a comprehensive dilated eye exam at least once a year. Diabetic retinopathy may not have any symptoms at first — but finding it early can help you take steps to protect your vision.") 
+
+  st.write("Managing your diabetes — by staying physically active, eating healthy, and taking your medicine — can also help you prevent or delay vision loss.")
+
+  st.header("What are the symptoms of diabetic retinopathy?") 
+  st.write("The early stages of diabetic retinopathy usually don’t have any symptoms. Some people notice changes in their vision, like trouble reading or seeing faraway objects. These changes may come and go.")
+
+  st.write("In later stages of the disease, blood vessels in the retina start to bleed into the vitreous (gel-like fluid that fills your eye). If this happens, you may see dark, floating spots or streaks that look like cobwebs. Sometimes, the spots clear up on their own — but it’s important to get treatment right away. Without treatment, scars can form in the back of the eye. Blood vessels may also start to bleed again, or the bleeding may get worse.")
+
+  st.header("What other problems can diabetic retinopathy cause?")
+  st.write("Diabetic retinopathy can lead to other serious eye conditions:") 
+
+  st.write("1. Diabetic macular edema (DME). Over time, about 1 in 15 people with diabetes will develop DME. DME happens when blood vessels in the retina leak fluid into the macula (a part of the retina needed for sharp, central vision). This causes blurry vision.")
+  st.write("2. Neovascular glaucoma. Diabetic retinopathy can cause abnormal blood vessels to grow out of the retina and block fluid from draining out of the eye. This causes a type of glaucoma (a group of eye diseases that can cause vision loss and blindness).")
+
+  st.header("What causes diabetic retinopathy?")
+  st.write("Diabetic retinopathy is caused by high blood sugar due to diabetes. Over time, having too much sugar in your blood can damage your retina — the part of your eye that detects light and sends signals to your brain through a nerve in the back of your eye (optic nerve).") 
+
+  st.write("Diabetes damages blood vessels all over the body. The damage to your eyes starts when sugar blocks the tiny blood vessels that go to your retina, causing them to leak fluid or bleed. To make up for these blocked blood vessels, your eyes then grow new blood vessels that don’t work well. These new blood vessels can leak or bleed easily.")
+
+  st.image("ret1.jpg")

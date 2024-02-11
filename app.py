@@ -42,7 +42,7 @@ if selected == "Diabetes Prediction":
 
   # FUNCTION
   def user_report():
-      pregnancies = st.sidebar.slider('Pregnancies', 0,17,3)
+      pregnancies = st.sidebar.number_input('Pregnancies', 0,20)
       glucose = st.sidebar.slider('Glucose', 0,200, 120 )
       bp = st.sidebar.slider('Blood Pressure', 0,122, 70 )
       skinthickness = st.sidebar.slider('Skin Thickness', 0,100, 20 )
@@ -239,6 +239,8 @@ if selected == "About":
   st.write("3. Make and keep health care appointments.")
   st.image("D1.jpg")
 
+
+
   st.title("What is Diabetic retinopathy?")
   st.write("Diabetic retinopathy is an eye condition that can cause vision loss and blindness in people who have diabetes. It affects blood vessels in the retina (the light-sensitive layer of tissue in the back of your eye")
 
@@ -263,3 +265,16 @@ if selected == "About":
   st.write("Diabetes damages blood vessels all over the body. The damage to your eyes starts when sugar blocks the tiny blood vessels that go to your retina, causing them to leak fluid or bleed. To make up for these blocked blood vessels, your eyes then grow new blood vessels that don’t work well. These new blood vessels can leak or bleed easily.")
 
   st.image("ret1.jpg")
+
+  st.header("What can I do to prevent diabetic retinopathy?")
+  st.write("Managing your diabetes is the best way to lower your risk of diabetic retinopathy. That means keeping your blood sugar levels in a healthy range. You can do this by getting regular physical activity, eating healthy, and carefully following your doctor’s instructions for your insulin or other diabetes medicines.")  
+
+  st.write("To make sure your diabetes treatment plan is working, you’ll need a special lab test called an A1C test. This test shows your average blood sugar level over the past 3 months. You can work with your doctor to set a personal A1C goal. Meeting your A1C goal can help prevent or manage diabetic retinopathy.")
+
+  st.header("What’s the treatment for diabetic retinopathy and DME?")
+  
+  st.write("In the early stages of diabetic retinopathy, your eye doctor will probably just keep track of how your eyes are doing. Some people with diabetic retinopathy may need a comprehensive dilated eye exam as often as every 2 to 4 months.") 
+
+  st.write("In later stages, it’s important to start treatment right away — especially if you have changes in your vision. While it won’t undo any damage to your vision, treatment can stop your vision from getting worse. It’s also important to take steps to control your diabetes, blood pressure, and cholesterol.")
+
+  

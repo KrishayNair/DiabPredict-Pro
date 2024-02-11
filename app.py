@@ -43,13 +43,13 @@ if selected == "Diabetes Prediction":
   # FUNCTION
   def user_report():
       pregnancies = st.sidebar.number_input('Pregnancies', 0,20)
-      glucose = st.sidebar.slider('Glucose', 0,200, 120 )
-      bp = st.sidebar.slider('Blood Pressure', 0,122, 70 )
+      glucose = st.sidebar.slider('Glucose', 0,250, 120 )
+      bp = st.sidebar.slider('Blood Pressure', 0,140, 70 )
       skinthickness = st.sidebar.slider('Skin Thickness', 0,100, 20 )
-      insulin = st.sidebar.slider('Insulin', 0,846, 79 )
-      bmi = st.sidebar.slider('BMI', 0,67, 20 )
-      dpf = st.sidebar.slider('Diabetes Pedigree Function', 0.0,2.4, 0.47 )
-      age = st.sidebar.slider('Age', 21,88, 33 )
+      insulin = st.sidebar.slider('Insulin', 0,850, 79 )
+      bmi = st.sidebar.slider('BMI', 0,70, 20 )
+      dpf = st.sidebar.slider('Diabetes Pedigree Function', 0.0,3.0, 0.47 )
+      age = st.sidebar.slider('Age', 18 ,100, 33 )
 
       user_report_data = {
           'Pregnancies': pregnancies,
@@ -239,6 +239,28 @@ if selected == "About":
   st.write("3. Make and keep health care appointments.")
   st.image("D1.jpg")
 
+  st.header("Prevention of Diabetes:")
+  st.write("Preventing diabetes involves adopting a healthy lifestyle and making choices that promote overall well-being. Here are some key strategies for diabetes prevention:")
+
+  st.write("1. Maintain a Healthy Weight: Being overweight or obese is a significant risk factor for type 2 diabetes. Aim for a healthy weight by adopting a balanced diet and engaging in regular physical activity.")
+
+  st.write("2. Follow a Balanced Diet: Focus on consuming a variety of nutrient-dense foods, including fruits, vegetables, lean proteins, whole grains, and healthy fats. Limit intake of processed foods, sugary snacks, and beverages high in added sugars.")
+
+  st.write("3. Stay Active: Regular physical activity can help lower blood sugar levels and improve insulin sensitivity. Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous activity each week, along with muscle-strengthening exercises on two or more days per week.")
+
+  st.write("4. Monitor Blood Sugar Levels: If you have prediabetes or are at risk of developing diabetes, monitoring your blood sugar levels regularly can help you track changes and take preventive measures.")
+
+  st.write("5. Limit Alcohol Consumption: Excessive alcohol consumption can contribute to weight gain and increase the risk of developing type 2 diabetes. Limit alcohol intake to moderate levels, which is generally defined as up to one drink per day for women and up to two drinks per day for men.")
+
+  st.write("6. Quit Smoking: Smoking increases the risk of various health complications, including type 2 diabetes. Quitting smoking can improve overall health and reduce the risk of developing diabetes.")
+
+  st.write("7. Manage Stress: Chronic stress can affect blood sugar levels and increase the risk of developing type 2 diabetes. Practice stress-reducing techniques such as meditation, deep breathing exercises, or engaging in hobbies and activities you enjoy.")
+
+  st.write("8. Get Adequate Sleep: Poor sleep habits and sleep deprivation can disrupt hormone levels and increase the risk of insulin resistance. Aim for 7-9 hours of quality sleep per night.")
+
+  st.write("9. Regular Check-ups: Schedule regular check-ups with your healthcare provider to monitor your health, discuss any concerns, and receive guidance on diabetes prevention strategies tailored to your individual needs.")
+
+  st.write("10. Know Your Risk Factors: Understanding your personal risk factors for diabetes, such as family history, age, and ethnicity, can help you take proactive steps to prevent or manage the condition effectively.")
 
 
   st.title("What is Diabetic retinopathy?")
@@ -277,4 +299,4 @@ if selected == "About":
 
   st.write("In later stages, it’s important to start treatment right away — especially if you have changes in your vision. While it won’t undo any damage to your vision, treatment can stop your vision from getting worse. It’s also important to take steps to control your diabetes, blood pressure, and cholesterol.")
 
-  
+  st.image("ret2.jpg")
